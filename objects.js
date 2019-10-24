@@ -21,6 +21,22 @@ console.log(countWords("One two two three four four four five"))
 
 /** 2. getMelonsAtPrice */
 function getMelonsAtPrice(price) {
-	// Replace this with your code
-   
+	
+  const melonPrices = {
+    2.50: ['Cantaloupe', 'Honeydew'],
+    2.95: ['Watermelon'],
+    3.25: ['Musk', 'Crenshaw'],
+    14.25: ['Christmas']
+    }
+
+  if (!melonPrices[price]){
+    return null;
+  } else {
+    return melonPrices[price].sort();
+  }
 }
+
+console.log(getMelonsAtPrice(2.50))
+console.log(getMelonsAtPrice(1.0))
+console.log(getMelonsAtPrice(3.25))
+console.log(getMelonsAtPrice(2.95))
