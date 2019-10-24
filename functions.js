@@ -5,15 +5,22 @@
 
 // Define your function here
 
-function isHometown(town) {
+const isHometown = (town) => {
   return town === 'San Francisco'; 
 }
  
 console.log(isHometown('San Francisco'))
 console.log(isHometown('Milwaukee'))
+
+
 /** 2. getFullName */
 
 // Define your function here
+const getFullName = (firstName, lastName) => {
+  return firstName + " " + lastName;
+}
+
+console.log(getFullName("Baloonicorn", "Hackbright"));
 
 
 /** 3. calculateTotal */
