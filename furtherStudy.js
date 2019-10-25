@@ -38,9 +38,7 @@ const kidsGame = (names) => {
     console.log(lastWord);
     console.log(lastWord[lastWord.length-1]);
     const startLetter = lastWord[lastWord.length-1];
-    if (firstLetterToWords[startLetter].length === 0) {
-
-    //if (!firstLetterToWords[startLetter]) {
+    if (firstLetterToWords[startLetter]=== undefined || firstLetterToWords[startLetter].length === 0) {
       break;
     }
     const word = firstLetterToWords[startLetter].shift();
@@ -49,6 +47,9 @@ const kidsGame = (names) => {
   }
   return output;
 }
+
+
+
 // console.log(kidsGame([]));
 console.log(kidsGame(["bagon", "baltoy", "yamask", "starly", "nosepass", "kalob", "nicky", "booger"]));
 console.log(kidsGame(["apple", "berry", "cherry"]));
